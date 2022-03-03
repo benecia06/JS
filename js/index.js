@@ -103,3 +103,11 @@ console.log(hello); // error dega hello is not defined
 
 //     //this space between opening and closing of curly braces is a block
 // }
+//const keyword
+const a = 2;
+// console.log(a);
+// na hi redeclare na reinitialize
+// const a = 5;
+// a = 4; //TypeError: Assignment to constant variable.
+// console.log("hey");
+
