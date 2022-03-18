@@ -76,6 +76,3 @@ let additionIIFE = (function (a, b) {
 
 // console.log(additionIIFE);
 // console.log(additionIIFE(20, 30));
-© 2022 GitHub, Inc.
-Terms
-Privacy
