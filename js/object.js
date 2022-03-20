@@ -45,18 +45,17 @@ console.log(captainAmerica.address.city);
 
 //for loop 
 // in keyword in JS is used to get keys from that object
-for (let haathi in captainAmerica) {
-    //key
-    console.log(haathi);
-    // hathi jo varibale h uske andar meri key ki value padi hui h 
-    //value
-    // varibale ke andar jo binded value h wo chahiye 
-    console.log(captainAmerica[haathi]); //bracket notation usage
+for (let getkey in captainAmerica) {
+    //to get the names of the key
+    console.log(getkey);
+    // get key variable contains the values of the keys of the object
+    //to get the values of the key bound in the variable
+    console.log(captainAmerica[getkey]); //bracket notation usage
 }
 
 console.log(typeof captainAmerica.friends);
 
-//deleteing the key of an object
+//deleting the key of an object
 delete captainAmerica.lastName;
 console.log(captainAmerica.lastName);
 
@@ -75,20 +74,26 @@ let car = {
     name: "Ferrari",
     model: 2022,
     startEngine: function () {
-        console.log(`Starting the engine of the car ${this.name}`)
+        console.log(`Starting the engine of the car ${this.name}`);
     }
+
+
+};
+for (let getkey1 in car) {
+    //to get the names of the key
+   console.log(getkey1);
+    // get key variable contains the values of the keys of the object
+    //to get the values of the key bound in the variable
+    console.log(car[getkey1]); //bracket notation usage
+    car.startEngine();
 }
-
-car.startEngine();
-
-
-// methods-> objects ke andar function
+// methods-> functions inside an object
 // console.log(str.toUpperCase());
 
 
 let arr = ["a", "b", 1, true];
-
-let arrr = {
+// an array is essentially an object as well
+let arrobject = {
     0: "a",
     1: "b",
     2: 1,
